@@ -1,0 +1,82 @@
+
+/*FONTS FONTS FONTS FONTS FONTS*/
+@font-face {
+    font-family: 'Quantico Bold';
+    src: url(/assets/fonts/Quantico/Quantico-Bold.ttf);
+    font-weight: bold;
+}  
+
+@font-face {
+    font-family: 'Quantico';
+    src: url(/assets/fonts/Quantico/Quantico-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url(/assets/fonts/Open_Sans/static/OpenSans/OpenSans-Regular.ttf);
+}
+
+/*FONT STYLES*/
+p{
+    font-family: 'Open Sans';
+}
+
+.topnavbar{
+    font-family: 'Quantico Bold';
+    color:#ffffff;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Quantico Bold';
+}
+
+.indexorderbutton{
+    font-family: 'Quantico'
+}
+
+/*CONTENT ALIGNMENT AND FLEX*/
+
+.bestCup{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    background-image: url(/assets/photos/coffee-hero-bg.jpg);
+    background-size: cover;
+}
+.finelyRoasted{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    background-image: url(/assets/photos/coffee-beans-bg.jpg);
+    color: #ffffff;
+}
+
+
+body{
+    text-align: center;
+    margin: 0;
+}
+
+
+/* BUTTON STYLES*/
+
+
+/*MOBILE STYLES*/
+@media only screen and (max-width: 480px) {
+}
+
+
+/*TABLET STYLES*/
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+
+}
+
+
+/*DESKTOP STYLES*/
+@media only screen and (min-width: 768px) {
+    .topnavbar li{
+        display: inline;
+    }
+}
