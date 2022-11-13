@@ -24,18 +24,18 @@ html, head, body, h1, h2, h3, h4, h5, h6, p, ul, li, a, img, nav, button, div, f
 /*FONT STYLES*/
 p{
     font-family: 'Open Sans';
+    font-size: 1rem;
 }
 
 .topnavbar li a{
     font-family: 'Quantico';
-    color:#ffffff;
     text-decoration: none;
     border: none;
 }
 
 h1,h2,h3,h4,h5,h6{
     font-family: 'Quantico Bold';
-    font-size: 30px;
+    font-size: 2rem;
 }
 
 /*CONTENT ALIGNMENT AND FLEX*/
@@ -44,8 +44,9 @@ h1,h2,h3,h4,h5,h6{
     display: flex;
     justify-content: center;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
+    align-content: left;
+    text-align: left;
+    color: #45230F;
 }
 
 .finelyRoasted{
@@ -64,18 +65,19 @@ body{
     text-align: center;
 }
 
-#navlogo{
-    max-width: 100%;
-}
-
 
 /* BUTTON STYLES*/
 
 #indexorderbutton{
     border-radius: 12px;
-    justify-content: center;
     background-color: #45230F;
     padding: 15px 20px 15px 20px;
+    transition: 0.3s;
+    opacity: 0.7;
+}
+
+#indexorderbutton:hover{
+    opacity: 1;
 }
 
 #indexorderbutton a{
@@ -84,7 +86,7 @@ body{
     text-align: center;
     text-decoration: none;
     border: none;
-    font-size: 24px;
+    font-size: 1.5rem;
 }
 
 
@@ -92,33 +94,50 @@ body{
 
 @media only screen and (max-width: 480px) {
     .bestCup{
-        padding: 20% 5% 30% 5%;
+        padding: 20% 5% 40% 5%;
         background-image: url(/assets/photos/coffee-hero-bg.jpg);
         background-position: 64% 10%;
+        align-items: center;
+    }
+    .bestCup h1{
+        padding: 0 10% 0 10%
     }
     .bestCup p{
         padding: 10%
     }
     .finelyRoasted{
+        text-align: center;
         padding: 10% 5% 10% 5%;
+    }
+    .finelyRoasted h1{
+        padding: 10% 20% 0 20%
     }
     .finelyRoasted p{
         padding: 10%;
+        text-align: left;
     }
     .topnavbar li{
         font-size: 24px;
         background: #233237;
         line-height: 2.5em;
         }
-        .topnavbar li:hover{
+    .topnavbar li a{
+        color:#ffffff;
+    }
+     .topnavbar li:hover{
             background: #b98957;
-        }
-    /*MOBILE NAVIGATION BAR*/
+    }
+
+    #navlogo{
+        max-width: 95%;
+    }
+
+    /*****MOBILE NAVIGATION BAR*****/
     
 .nav-menu {
     position: fixed;
     left: -100%;
-    top: 5rem;
+    top: 4.75em;
     flex-direction: column;
     width: 100%;
     text-align: center;
@@ -132,9 +151,18 @@ body{
 }
 
 .hamburger {
-    display: block;
     cursor: pointer;
+    display: inline-flex;
+    background-image: url(/assets/photos/hamburger.png);
+    background-color: #ffffff;
+    background-size: cover;
+    padding: 5%;
 }
+
+.hamburger.clicked{
+    background-image: url(/assets/photos/hamburgerexit.png);
+}
+
 .topnavbar {
     display: flex;
     justify-content: space-between;
@@ -142,42 +170,110 @@ body{
     padding: 1rem 1.5rem;
 }
 
-.bar {
-    display: block;
-    width: 25px;
-    height: 3px;
-    margin: 5px auto;
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-    background-color: #101010;
-}
-.hamburger.active .bar:nth-child(2) {
-    opacity: 0;
-}
-
-.hamburger.active .bar:nth-child(1) {
-    transform: translateY(8px) rotate(45deg);
-}
-
-.hamburger.active .bar:nth-child(3) {
-    transform: translateY(-8px) rotate(-45deg);
-}
 }
 
 
 /*TABLET STYLES*/
 @media only screen and (min-width: 481px) and (max-width: 767px) {
+    .hamburger{
+        display: none;
+    }
 
+    .topnavbar li{
+        display: inline-block;
+        padding: 5%;
+    }
+
+    .topnavbar li a{
+        display: block;
+        width: 100%;
+        color: #45230F;
+    }
+
+    .index-body{
+        background-image: url(/assets/photos/coffee-hero-bg.jpg);
+        background-position: 65% 35%;
+    }
+
+    .finelyRoasted{
+        padding: 10%;
+    }
+    
+    .finelyRoasted h1{
+        padding: 5%
+    }
+
+    .bestCup{
+        display: flex;
+        align-items: left;
+        padding: 10% 20% 40% 10%;
+    }
+    .bestCup p{
+        padding: 0 0 5% 0;
+    }
+    #indexorderbutton{
+        width: 200px;
+    }
 }
 
 
 /*DESKTOP STYLES*/
 @media only screen and (min-width: 768px) {
+    .topnavbar{
+        display: flex;
+        padding: 5% 10% 5% 10%;
+        justify-content: space-between;
+    }
+    
     .topnavbar li{
-        display: inline;
+        display: inline-flex;
+    }
+
+    .topnavbar li a{
+        display: flex;
+        color: #45230F;
+        padding: 0 1rem 0 1rem;
+        flex-wrap: nowrap;
+        max-width: 70%;
+    }
+    
+
+    #navlogo{
+        width:30%;
+        align-self: left;
     }
 
     body{
         background-image: url(/assets/photos/coffee-hero-bg.jpg);
+        background-position: 40% 50%;
+    }
+    .hamburger{
+        display: none;
+    }
+
+    .bestCup{
+        padding: 0 10% 10% 10%;
+    }
+    
+    .bestCup h1{
+        padding: 5% 5% 2.5% 0;
+        width: 35%
+    }
+
+    .bestCup p{
+        width: 35%;
+        padding: 0 0 2.5% 0;
+    }
+    #indexorderbutton{
+        width: 250px;
+    }
+    .finelyRoasted{
+        padding: 5%;
+    }
+    .finelyRoasted p{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 5% 20% 0 20%;
     }
 }
