@@ -7,18 +7,18 @@ html, head, body, h1, h2, h3, h4, h5, h6, p, ul, li, a, img, nav, button, div, f
 /*FONTS FONTS FONTS FONTS FONTS*/
 @font-face {
     font-family: 'Quantico Bold';
-    src: url(./assets/fonts/Quantico/Quantico-Bold.ttf);
+    src: url(../assets/fonts/Quantico/Quantico-Bold.ttf);
     font-weight: bold;
 }  
 
 @font-face {
     font-family: 'Quantico';
-    src: url(./assets/fonts/Quantico/Quantico-Regular.ttf);
+    src: url(../assets/fonts/Quantico/Quantico-Regular.ttf);
 }
 
 @font-face {
     font-family: 'Open Sans';
-    src: url(./assets/fonts/Open_Sans/static/OpenSans/OpenSans-Regular.ttf);
+    src: url(../assets/fonts/Open_Sans/static/OpenSans/OpenSans-Regular.ttf);
 }
 
 /*FONT STYLES*/
@@ -54,7 +54,7 @@ h1,h2,h3,h4,h5,h6{
     flex-direction: column;
     align-items: center;
     text-align: center;
-    background-image: url(./assets/photos/coffee-beans-bg.jpg);
+    background-image: url(../assets/photos/coffee-beans-bg.jpg);
     background-size: cover;
     color: #ffffff;
 }
@@ -95,7 +95,7 @@ body{
 @media only screen and (max-width: 480px) {
     .bestCup{
         padding: 20% 5% 40% 5%;
-        background-image: url(./assets/photos/coffee-hero-bg.jpg);
+        background-image: url(../assets/photos/coffee-hero-bg.jpg);
         background-position: 64% 10%;
         align-items: center;
     }
@@ -153,14 +153,14 @@ body{
 .hamburger {
     cursor: pointer;
     display: inline-flex;
-    background-image: url(./assets/photos/hamburger.png);
+    background-image: url(../assets/photos/hamburger.png);
     background-color: #ffffff;
     background-size: cover;
     padding: 5%;
 }
 
 .hamburger.clicked{
-    background-image: url(./assets/photos/hamburgerexit.png);
+    background-image: url(../assets/photos/hamburgerexit.png);
 }
 
 .topnavbar {
@@ -191,7 +191,7 @@ body{
     }
 
     .index-body{
-        background-image: url(./assets/photos/coffee-hero-bg.jpg);
+        background-image: url(../assets/photos/coffee-hero-bg.jpg);
         background-position: 65% 35%;
     }
 
