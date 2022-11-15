@@ -21,3 +21,14 @@ function closeMenu() {
     hamburger.classList.remove("clicked");
 }
 
+window.addEventListener('scroll', () => {
+    if
+    (navMenu.classList.contains('active')) {
+        
+        navMenu.classList.remove('active')
+        hamburger.classList.remove('clicked')
+    }
+}
+
+)
+
