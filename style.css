@@ -1,4 +1,4 @@
-html, head, body, h1, h2, h3, h4, h5, h6, p, ul, li, a, img, nav, button, div, footer, link, meta, title{
+html, head, body, h1, h2, h3, h4, h5, h6, p, ul, li, a, img, nav, label, button, div, footer, link, meta, title, input{
     padding: 0;
     margin: 0;
     border: 0;
@@ -90,15 +90,32 @@ body{
     font-size: 1.5rem;
     cursor: pointer;
 }
+/* SHOW/HIDE DIV */
 
+.control-me::after {
+    content: none;
+}
+#toggle:checked ~ .control-me::after {
+    content: "Go get some coffee!";
+}
 
+label {
+    background: hsl(122, 37%, 74%);
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+}
+
+.visually-hidden {
+    position: absolute;
+    left: -100vw;
+}
 /*MOBILE STYLES*/
 
 @media only screen and (max-width: 480px) {
     .bestCup{
         padding: 20% 5% 40% 5%;
         background-image: url(./assets/photos/coffee-hero-bg.jpg);
-        background-position: 64% 10%;
+        background-position: 64% 5%;
         align-items: center;
     }
     .bestCup h1{
@@ -243,7 +260,7 @@ body{
         width:30%;
     }
 
-    body{
+    .index-body{
         background-image: url(./assets/photos/coffee-hero-bg.jpg);
         background-position: 40% 50%;
     }
