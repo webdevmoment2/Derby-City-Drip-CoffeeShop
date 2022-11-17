@@ -23,18 +23,18 @@ html, head, body, h1, h2, h3, h4, h5, h6, p, ul, li, a, img, nav, label, button,
 
 /*FONT STYLES*/
 p{
-    font-family: 'Open Sans';
+    font-family: 'Open Sans', 'Helvetica';
     font-size: 1rem;
 }
 
 .topnavbar li a{
-    font-family: 'Quantico';
+    font-family: 'Quantico', 'Helvetica';
     text-decoration: none;
     border: none;
 }
 
 h1,h2,h3,h4,h5,h6{
-    font-family: 'Quantico Bold';
+    font-family: 'Quantico Bold', 'Helvetica';
     font-size: 2rem;
 }
 
