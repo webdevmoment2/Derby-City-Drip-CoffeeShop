@@ -38,6 +38,11 @@ h1,h2,h3,h4,h5,h6{
     font-size: 2rem;
 }
 
+.getsomecoffee label{
+    font-family: 'Quantico Bold';
+ }
+ 
+
 /*CONTENT ALIGNMENT AND FLEX*/
 
 .bestCup{
@@ -91,19 +96,36 @@ body{
     cursor: pointer;
 }
 /* SHOW/HIDE DIV */
+/* Checkbox Hack */
 
-.control-me::after {
-    content: none;
-}
-#toggle:checked ~ .control-me::after {
-    content: "Go get some coffee!";
-}
+input[type=checkbox] {
+    position: absolute;
+    left: -9999px;
+ }
+ label { 
+   display: inline-block;
+   margin: 60px 0 10px 0;
+   cursor: pointer;
+ }
+ 
+ /* Default State */
+ #showhidebutton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ .getsomecoffee {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    visibility: hidden;
+ }
 
-label {
-    background: hsl(122, 37%, 74%);
-    padding: 0.5rem 1rem;
-    border-radius: 0.5rem;
-}
+ /* Toggled State */
+ input[type=checkbox]:checked ~ .getsomecoffee {
+    visibility: visible;
+ }
 
 .visually-hidden {
     position: absolute;
