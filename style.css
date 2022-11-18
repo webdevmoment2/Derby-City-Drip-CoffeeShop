@@ -269,6 +269,9 @@ input[type=checkbox] {
 .columnsnacks p{
     font-size: .75rem;
 }
+.copyright{
+    max-width: .5rem;
+}
 
 }
 
