@@ -431,20 +431,26 @@ input[type=checkbox] {
       }  
       .columncoffee h2{
         font-size: 1.5rem;
+        padding: 2.5% 20% 2.5% 20%;
     }
     .columncoffee p{
         font-size: 1rem;
+        padding: 0 20% 5% 20%;
     }
     .columnteas h2{
         font-size: 1.5rem;
+        padding: 2.5% 20% 2.5% 20%;
     }
     .columnteas p{
         font-size: 1rem;
+        padding: 0 20% 5% 20%;
     }
     .columnsnacks h2{
         font-size: 1.5rem;
+        padding: 2.5% 20% 2.5% 20%;
     }
     .columnsnacks p{
         font-size: 1rem;
+        padding: 0 20% 5% 20%;
     }
 }
