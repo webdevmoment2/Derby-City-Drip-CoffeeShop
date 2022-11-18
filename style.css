@@ -63,14 +63,57 @@ h1,h2,h3,h4,h5,h6{
     background-size: cover;
     color: #ffffff;
 }
-
-
+.menu-body{
+    background-color: beige;
+}
 body{
     text-align: center;
 }
+.menuheading{
+    padding: 5%;
+    color:#233237;
+}  
+.menuheading p{
+    text-align: start;
+    justify-content: center;
+    margin: 0 15% 0 15%;
+    padding: 2.5% 0 2.5% 0;
+    color:#45230F;
+}
+.columncoffee{
+    color:#45230F;
+    text-align: center;
+}
 
+.columncoffee h2{
+    padding: 2.5% 25% 2.5% 25%;
+}
+.columncoffee p{
+    padding: 0 25% 5% 25%;
+}
+.columnteas{
+    color:#45230F;
 
-/* BUTTON STYLES*/
+}
+.columnteas h2{
+    padding: 2.5% 25% 2.5% 25%;
+}
+.columnteas p{
+    padding: 0 25% 5% 25%;
+}
+
+.columnsnacks{
+    color:#45230F;
+}
+
+.columnsnacks h2{
+    padding: 2.5% 25% 2.5% 25%;
+}
+.columnsnacks p{
+    padding: 0 25% 5% 25%;
+}
+
+/*BUTTON STYLES*/
 
 #indexorderbutton{
     text-align: center;
@@ -95,8 +138,7 @@ body{
     font-size: 1.5rem;
     cursor: pointer;
 }
-/* SHOW/HIDE DIV */
-/* Checkbox Hack */
+/*SHOW/HIDE DIV*/
 
 input[type=checkbox] {
     position: absolute;
@@ -108,7 +150,7 @@ input[type=checkbox] {
    cursor: pointer;
  }
  
- /* Default State */
+ /*DEFAULT STATE*/
  #showhidebutton{
     display: flex;
     justify-content: center;
@@ -122,7 +164,8 @@ input[type=checkbox] {
     visibility: hidden;
  }
 
- /* Toggled State */
+ /*TOGGLED STATE*/
+
  input[type=checkbox]:checked ~ .getsomecoffee {
     visibility: visible;
  }
@@ -210,6 +253,24 @@ input[type=checkbox] {
     align-items: center;
     padding: 1rem 1.5rem;
 }
+.columncoffee h2{
+    font-size: 1.25rem;
+}
+.columncoffee p{
+    font-size: .75rem;
+}
+.columnteas h2{
+    font-size: 1.25rem;
+}
+.columnteas p{
+    font-size: .75rem;
+}
+.columnsnacks h2{
+    font-size: 1.25rem;
+}
+.columnsnacks p{
+    font-size: .75rem;
+}
 
 }
 
@@ -254,6 +315,25 @@ input[type=checkbox] {
     #indexorderbutton{
         width: 200px;
     }
+    .columncoffee h2{
+        font-size: 1.25rem;
+    }
+    .columncoffee p{
+        font-size: .75rem;
+    }
+    .columnteas h2{
+        font-size: 1.25rem;
+    }
+    .columnteas p{
+        font-size: .75rem;
+    }
+    .columnsnacks h2{
+        font-size: 1.25rem;
+    }
+    .columnsnacks p{
+        font-size: .75rem;
+    }
+
 }
 
 
@@ -314,5 +394,52 @@ input[type=checkbox] {
         flex-direction: column;
         justify-content: center;
         padding: 5% 20% 0 20%;
+    }      
+    .rowcoffee{
+        display: table;
+        
+    }
+      .columncoffee{
+        display: inline-flex; 
+        flex-direction: column; 
+        align-items: flex-start; 
+        max-width: 50%;
+      }     
+    .rowteas{
+        display: table;
+    }
+      .columnteas {
+        display: inline-flex; 
+        flex-direction: column; 
+        align-items: flex-start; 
+        max-width: 50%;
+      } 
+    .rowsnacks{
+        display: table;
+    }
+
+      .columnsnacks {
+        display: inline-flex; 
+        flex-direction: column; 
+        align-items: flex-start; 
+        max-width: 50%;
+      }  
+      .columncoffee h2{
+        font-size: 1.5rem;
+    }
+    .columncoffee p{
+        font-size: 1rem;
+    }
+    .columnteas h2{
+        font-size: 1.5rem;
+    }
+    .columnteas p{
+        font-size: 1rem;
+    }
+    .columnsnacks h2{
+        font-size: 1.5rem;
+    }
+    .columnsnacks p{
+        font-size: 1rem;
     }
 }
