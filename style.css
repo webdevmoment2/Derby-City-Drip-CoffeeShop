@@ -110,6 +110,10 @@ body{
 .columnsnacks p{
     padding: 0 25% 5% 25%;
 }
+.copyright p{
+    overflow: hidden;
+    text-align: center;
+}
 
 /*BUTTON STYLES*/
 
@@ -269,10 +273,10 @@ input[type=checkbox] {
 .columnsnacks p{
     font-size: .75rem;
 }
-.copyright{
-    max-width: .5rem;
+.copyright p{
+    overflow: hidden;
+    text-align: center;
 }
-
 }
 
 
