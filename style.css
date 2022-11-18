@@ -118,11 +118,13 @@ body{
 .construction-message{
     font-family: 'Quantico Bold', 'Helvetica';
     font-size: 5rem;
-    padding: 5% 15% 5% 15%;
-    margin: 5%;
+    padding: 7.5% 17.5% 7.5% 17.5%;
+    margin: 2.5%;
     color: #45230F;
     border: solid 3px #233237;
     background-color: bisque;
+    display: flex;
+    justify-content: center;
 }
 
 /*BUTTON STYLES*/
