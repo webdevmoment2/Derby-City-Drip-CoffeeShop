@@ -115,6 +115,16 @@ body{
     text-align: center;
 }
 
+.construction-message{
+    font-family: 'Quantico Bold', 'Helvetica';
+    font-size: 5rem;
+    padding: 5% 15% 5% 15%;
+    margin: 5%;
+    color: #45230F;
+    border: solid 3px #233237;
+    background-color: bisque;
+}
+
 /*BUTTON STYLES*/
 
 #indexorderbutton{
