@@ -127,6 +127,10 @@ body{
     justify-content: center;
 }
 
+#emailerror{
+    display: none;
+}
+
 /*BUTTON STYLES*/
 
 #indexorderbutton{
@@ -152,6 +156,11 @@ body{
     font-size: 1.5rem;
     cursor: pointer;
 }
+/*MAP STYLES*/
+
+#map {
+    height: 50vh;
+    width: 50vw;}
 
 /*SHOW/HIDE DIV*/
 

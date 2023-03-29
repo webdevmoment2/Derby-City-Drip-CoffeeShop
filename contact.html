@@ -8,22 +8,24 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body class="contactBody">
-  <img class="logo" src="assets/logos/derbycitydriplogo.png" alt="Derby City Drip Logo">
-    <nav class="topnavbar">
-        <ul>
-          <li><a href="./index.html">HOME</a></li>
-          <li><a href="./location.html">LOCATION</a></li>
-          <li><a href="./menu.html">MENU</a></li>
-          <li><a href="./contact.html">CONTACT</a></li>
-        </ul>
-        </nav>
-      <h1>JOIN THE DCD COFFE CLUB!</h1>
+  <nav class="topnavbar">
+    <img id="navlogo" src="assets/logos/derbycitydriplogo.png" alt="Derby City Drip Logo">
+       <ul class="nav-menu">
+         <li class="nav-item"><a href="./index.html">HOME</a></li>
+         <li class="nav-item"><a href="./location.html">LOCATION</a></li>
+         <li class="nav-item"><a href="./menu.html">MENU</a></li>
+         <li class="nav-item"><a href="./contact.html">CONTACT</a></li>
+       </ul>  
+       <button class="hamburger"></button>
+   </nav>
+      <h1>JOIN THE DCD COFFEE CLUB!</h1>
       <p>Steamed roast white saucer aroma decaffeinated. Caramelization skinny brewed, foam latte eu latte cream grounds to go plunger pot.</p>
       <form action="/action_page.php" method="get" name="myForm">
         <label for="name">Name:</label>
-        <input type="text" id="name" name="name"><br><br>
+        <input type="text" id="contactformname" name="name" placeholder="Your name..."><br><br>
         <label for="email">Email:</label>
-        <input type="text" id="email" name="email"><br><br>
+        <input type="text" id="contactformemail" name="email" placeholder="Your email..."><br><br>
+        <p id = "emailerror">Please enter a valid email address.</p>
         <button type="button">Join Now</button>
       </form>
       <div class="loc_sitemap_socials">
@@ -47,5 +49,6 @@
         <h2>SOCIALS</h2>
         <p>Please join us for all the latest announcements via our social media network.</p>
 </div>
+<script src="js/contactForm.js"></script>
 </body>
 </html>
