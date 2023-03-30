@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="style.css">    
 </head>
 <body class="locationBody">
@@ -33,38 +34,37 @@
         <h2>HOURS</h2>
         <p>These are our current hours, unforeseen circumstances may cause these to change.</p>
         <table id="hoursOfOperation">
-           <tr>
-            <td>SUN:</td>
-            <td>CLOSED</td>
+          <tr class="hoursTableHeader">
+          <th> Day </th>
+          <th> Hours</th>
           </tr>
-          <tr>
-            <td>MON:</td>
-            <td>6AM - 10PM</td>
-          </tr>
-          <tr>
-            <td>TUES:</td>
-            <td>6AM - 10PM</td>
-          </tr>
-          <tr>
-            <td>WED:</td>
-            <td>6AM - 10PM</td>
-          </tr>
-          <tr>
-            <td>THU:</td>
-            <td>6AM - 10PM</td>
-          </tr>
-          <tr>
-            <td>FRI:</td>
-            <td>6AM - 12PM</td>
-          </tr>
-          <tr>
-            <td>SAT:</td>
-            <td>6AM - 12PM</td>
-          </tr>          
+           <tbody id="hoursData">
+
+           </tbody>
         </table>
       </div>
       </div>
       </body>
+      <script>
+        var menuItems = [{day:'SUN',hours:'CLOSED'},
+                         {day:'MON',hours:'6AM - 10PM'},
+                         {day:'TUE',hours:'6AM - 10PM'},
+                         {day:'WED',hours:'6AM - 10PM'},
+                         {day:'THU',hours:'6AM - 10PM'},
+                         {day:'FRI',hours:'6AM - 12PM'},
+                         {day:'SAT',hours:'6AM - 12PM'}]
+
+          function buildTable(data){
+            var table = document.getElementById('hoursData')
+            for (var i = 0; i < data.length; i++){
+            var row = `<tr>
+                      <td>${data[i].day}</td>
+                      <td>${data[i].hours}</td>
+                      </tr>`
+            table.innerHTML += row;}
+          }
+          buildTable(menuItems)
+      </script>
       <script src="https://js.api.here.com/v3/3.1/mapsjs-core.js"></script>
       <script src="https://js.api.here.com/v3/3.1/mapsjs-service.js"></script>
       <script src="https://js.api.here.com/v3/3.1/mapsjs-ui.js"></script>

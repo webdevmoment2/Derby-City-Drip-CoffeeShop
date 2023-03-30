@@ -557,7 +557,6 @@ input[type=checkbox] {
     .locationLocation p{
         display: inline-block;
         padding: 2.5% 0 2.5% 0;
-        float: left;
     }
     #locationAddress{
         margin: 0 7.5% 0 0;
