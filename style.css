@@ -22,7 +22,7 @@ html, head, body, h1, h2, h3, h4, h5, h6, p, ul, li, a, img, nav, label, button,
 }
 
 /*FONT STYLES*/
-p{
+p, table{
     font-family: 'Open Sans', 'Helvetica';
     font-size: 1rem;
 }
@@ -33,7 +33,7 @@ p{
     border: none;
 }
 
-h1,h2,h3,h4,h5,h6{
+h1,h2,h3,h4,h5,h6 {
     font-family: 'Quantico Bold', 'Helvetica';
     font-size: 2rem;
 }
@@ -131,6 +131,8 @@ body{
     display: none;
 }
 
+
+
 /*BUTTON STYLES*/
 
 #indexorderbutton{
@@ -160,14 +162,6 @@ body{
 .locationBody{
     background-color: lightyellow;
 }
-
-/*MAP STYLES*/
-
-#map {
-    height: 50vh;
-    width: 75vw;
-    margin: auto;
-    }
 
 /*SHOW/HIDE DIV*/
 
@@ -246,14 +240,60 @@ input[type=checkbox] {
     #navlogo{
         max-width: 95%;
     }
+    .columncoffee h2{
+        font-size: 1.25rem;
+    }
+    .columncoffee p{
+        font-size: .75rem;
+    }
+    .columnteas h2{
+        font-size: 1.25rem;
+    }
+    .columnteas p{
+        font-size: .75rem;
+    }
+    .columnsnacks h2{
+        font-size: 1.25rem;
+    }
+    .columnsnacks p{
+        font-size: .75rem;
+    }
+    .copyright p{
+        overflow: hidden;
+        text-align: center;
+    }
     .locationBody{
     background-color: white;
     }
-    .locationBGColor{
+    #locationBG{
         background-color: lightyellow;
         height: 100%;
         width: 100%;
     }
+    .locationLocation{
+        padding: 10%;
+    }
+    .locationLocation p{
+        padding: 5%;
+    }
+    #locationHours{
+        padding: 10%;
+    }
+    #locationHours p{
+        padding:5%;
+    }
+    #hoursOfOperation{
+        margin: auto;
+    }
+    #hoursOfOperation td:first-child{
+        padding: 0 20px 0 0;}
+    
+    #map{
+    height: 50vh;
+    width: 75vw;
+    margin: auto;
+    }
+    
 
     /*****MOBILE NAVIGATION BAR*****/
     
@@ -293,27 +333,9 @@ input[type=checkbox] {
     align-items: center;
     padding: 1rem 1.5rem;
 }
-.columncoffee h2{
-    font-size: 1.25rem;
-}
-.columncoffee p{
-    font-size: .75rem;
-}
-.columnteas h2{
-    font-size: 1.25rem;
-}
-.columnteas p{
-    font-size: .75rem;
-}
-.columnsnacks h2{
-    font-size: 1.25rem;
-}
-.columnsnacks p{
-    font-size: .75rem;
-}
-.copyright p{
-    overflow: hidden;
-    text-align: center;
+.nav-item a{
+    display: block;
+    width: 100%;
 }
 }
 
@@ -376,7 +398,40 @@ input[type=checkbox] {
     .columnsnacks p{
         font-size: .75rem;
     }
-
+    #map{
+        height: 50vh;
+        width: 90vw;
+        margin: auto;
+        }
+    .locationLocation{
+        padding: 5% 0 5% 0;
+        }
+    .locationLocation h2{
+        text-align: start;
+        padding: 0 5% 5% 5%;
+        }
+    .locationLocation p{
+        display: inline-block;
+        text-align: start; 
+        }
+    #locationAddress{
+            float: left;
+            margin-left: 5%;
+        }
+        
+   
+    #locationHours{
+        text-align: start;
+        padding: 5%;
+    }
+    #locationHours p{
+        padding: 5% 0 5% 0;
+    }
+    #hoursOfOperation{
+        margin: auto;
+    }
+    #hoursOfOperation td:first-child{
+        padding: 0 20px 0 0;}
 }
 
 
@@ -490,5 +545,40 @@ input[type=checkbox] {
     .columnsnacks p{
         font-size: 1rem;
         padding: 0 20% 5% 20%;
+    }
+    #locationBG{
+        display: flex;
+        overflow-y: visible;
+    }
+    .locationLocation{
+        text-align: start;
+        margin: 0 0 0 10%;
+    }
+    .locationLocation p{
+        display: inline-block;
+        padding: 2.5% 0 2.5% 0;
+        float: left;
+    }
+    #locationAddress{
+        margin: 0 7.5% 0 0;
+    }
+    
+    #map{
+        margin: 0 0 0 10%;
+        height: 50vh;
+        width: 50vw;
+        }
+    #locationHours{
+        text-align: start;
+        padding: 0 15% 0 15%;
+    }
+    #locationHours p{
+        margin: 5% 0 5% 0;
+    }
+    #hoursOfOperation{
+        text-align: start;
+    }
+    #hoursOfOperation td:first-child{
+        padding: 0 20px 0 0;
     }
 }

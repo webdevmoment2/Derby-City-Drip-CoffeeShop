@@ -7,9 +7,11 @@ email.addEventListener('input', function(emailInput) {
     var currentEmail = emailInput.target.value;
     var validEmail = acceptedEmail.test(currentEmail);
 
-    if (validEmail){
+    if (validEmail || currentEmail === ''){
         emailErr.style.display = 'none'
     } else {
         emailErr.style.display = 'block'
     }}
+
+    
     )
