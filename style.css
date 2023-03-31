@@ -528,6 +528,9 @@ input[type=text]{
     box-sizing: border-box; 
     resize: vertical
   }
+  #joinTheClub p{
+        text-align: center;
+    }
 
 /*DESKTOP STYLES*/
 @media only screen and (min-width: 768px) {
@@ -696,4 +699,8 @@ input[type=text]{
         text-align: center;
         margin: 0 5% 0 5%;
         padding: 5%;
-}}
+    }
+    #joinTheClub p{
+        text-align: center;
+    }
+}
