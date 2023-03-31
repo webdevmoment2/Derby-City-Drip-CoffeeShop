@@ -680,7 +680,7 @@ input[type=text]{
         border: 1px solid #ccc; 
         border-radius: 4px;
         box-sizing: border-box; 
-        resize: vertical
+        resize: vertical;
       }
       .loc_sitemap_socials{
         text-align: center;
