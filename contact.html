@@ -18,37 +18,28 @@
        </ul>  
        <button class="hamburger"></button>
    </nav>
+    <div id="joinTheClub">
       <h1>JOIN THE DCD COFFEE CLUB!</h1>
       <p>Steamed roast white saucer aroma decaffeinated. Caramelization skinny brewed, foam latte eu latte cream grounds to go plunger pot.</p>
-      <form action="/action_page.php" method="get" name="myForm">
-        <label for="name">Name:</label>
-        <input type="text" id="contactformname" name="name" placeholder="Your name..."><br><br>
-        <label for="email">Email:</label>
-        <input type="text" id="contactformemail" name="email" placeholder="Your email..."><br><br>
+      <form id ="contactForm" action="" method="get" name="myForm">
+        <label id ="nameLabel" for="name">NAME:</label><br></br>
+        <input id ="contactformname" type="text" name="name" placeholder="Your name..."><br><br>
+        <label id="emailLabel" for="email">EMAIL:</label><br></br>
+        <input id="contactformemail" type="text" name="email" placeholder="Your email..."><br><br>
         <p id = "emailerror">Please enter a valid email address.</p>
-        <button type="button">Join Now</button>
+        <div id="submitButtonHolder">
+        <button id="submitButton" type="button">JOIN NOW</button>
+        </div>
       </form>
-      <div class="loc_sitemap_socials">
+      </div>
+
+    <div class="loc_sitemap_socials">
 
         <h2>LOCATION</h2>
         <p>1234 W. MAIN ST.<br>LOUISVILLE, KY 40213</p>
         <p>P: 502-555-555<br>E: hello@derbycitydrip.com</p>
 
-    <nav id="footnavbar">
-        <h2>SITEMAP</h2>
-
-    <ul>
-        <li><a href="./index.html">HOME</a></li>
-        <li><a href="./location.html">LOCATION</a></li>
-        <li><a href="./menu.html">MENU</a></li>
-        <li><a href="./contact.html">CONTACT</a></li>
-      </ul>
-
-    </nav>
-
-        <h2>SOCIALS</h2>
-        <p>Please join us for all the latest announcements via our social media network.</p>
-</div>
+    </div>
 <script src="js/contactForm.js"></script>
 <script src="./js/hamburger.js"></script>
 </body>

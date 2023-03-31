@@ -39,36 +39,16 @@
           <th> Hours</th>
           </tr>
            <tbody id="hoursData">
-
            </tbody>
         </table>
       </div>
       </div>
       </body>
-      <script>
-        var menuItems = [{day:'SUN',hours:'CLOSED'},
-                         {day:'MON',hours:'6AM - 10PM'},
-                         {day:'TUE',hours:'6AM - 10PM'},
-                         {day:'WED',hours:'6AM - 10PM'},
-                         {day:'THU',hours:'6AM - 10PM'},
-                         {day:'FRI',hours:'6AM - 12PM'},
-                         {day:'SAT',hours:'6AM - 12PM'}]
-
-          function buildTable(data){
-            var table = document.getElementById('hoursData')
-            for (var i = 0; i < data.length; i++){
-            var row = `<tr>
-                      <td>${data[i].day}</td>
-                      <td>${data[i].hours}</td>
-                      </tr>`
-            table.innerHTML += row;}
-          }
-          buildTable(menuItems)
-      </script>
+      <script src="./js/hamburger.js"></script>
+      <script src="./js/hoursTable.js"></script>
       <script src="https://js.api.here.com/v3/3.1/mapsjs-core.js"></script>
       <script src="https://js.api.here.com/v3/3.1/mapsjs-service.js"></script>
       <script src="https://js.api.here.com/v3/3.1/mapsjs-ui.js"></script>
       <script src="https://js.api.here.com/v3/3.1/mapsjs-mapevents.js"></script>
       <script src="js/dripMap.js"></script>
-      <script src="./js/hamburger.js"></script>
 </html>
