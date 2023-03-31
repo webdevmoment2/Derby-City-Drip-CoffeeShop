@@ -1,5 +1,5 @@
 // Embedded Map
-const platform = new H.service.Platform({ apikey: 'DpR2DPaamzrnNw6bdh0lzq21X5-1TW4LQk-yaB4CltA' });
+const platform = new H.service.Platform({ apikey: 'ASK FOR API KEY' });
 const defaultLayers = platform.createDefaultLayers();
 const map = new H.Map(
     document.getElementById('map'),
